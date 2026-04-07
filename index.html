@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Charls | Web Resume</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<header class="top-bar">
+  <img src="charla.jpg" class="profile-pic">
+  <h1>Jason Charls Bucol</h1>
+  <p class="role">Web Developer Applicant</p>
+</header>
+
+<nav class="menu">
+  <a href="#profile">Profile</a>
+  <a href="#edu">Education</a>
+  <a href="#abilities">Skills</a>
+  <a href="#work">Projects</a>
+  <a href="#reach">Contact</a>
+</nav>
+
+<section id="profile" class="section">
+  <h2>Profile</h2>
+  <p>IT student focused on building efficient and user-friendly systems.</p>
+</section>
+
+<section id="edu" class="section">
+  <h2>Education</h2>
+  <div class="box">
+    <p><b>BSIT</b> - USTP </p>
+    <p><b>STEM</b> - CU </p>
+    <p><b>SHS</b> - PCC </p>
+  </div>
+</section>
+
+<section id="abilities" class="section">
+  <h2>Skills <button id="btnToggle">Hide</button></h2>
+  <div class="box" id="skillsBox">
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <h2>Projects</h2>
+
+  <div class="box" id="projectsBox">
+    <div class="item">Resume Website <span class="remove">✖</span></div>
+    <div class="item">Payroll System <span class="remove">✖</span></div>
+    <div class="item">Web Design <span class="remove">✖</span></div>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="projectInput" placeholder="Enter project name">
+    <button id="btnAdd">Add</button>
+  </div>
+</section>
+
+<section id="reach" class="section">
+  <h2>Contact</h2>
+
+  <form id="contactForm">
+    <input type="text" id="userName" placeholder="Full Name">
+    <input type="email" id="userEmail" placeholder="Email">
+    <textarea id="userMsg" placeholder="Your message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <small id="formMsg"></small>
+</section>
+
+<footer>
+  <p>© <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
